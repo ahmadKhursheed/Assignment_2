@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private TextView textView;
-    private Button incrementButton;
+    private Button increaseButton;
     private Button decrementButton;
     private Button Reset;
     @Override
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setUI();
-        incrementButton.setOnClickListener(new View.OnClickListener() {
+        increaseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String newTest=Integer.toString((Integer.parseInt(textView.getText().toString()))+1);
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     private void setUI()
     {
         textView=findViewById(R.id.TextView);
-        incrementButton=findViewById(R.id.increase);
+        increaseButton=findViewById(R.id.increase);
         decrementButton=findViewById(R.id.decrease);
         Reset=findViewById(R.id.reset);
     }
