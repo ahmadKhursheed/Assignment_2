@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView textView;
     private Button incrementButton;
-    private Button decreaseButton;
+    private Button decrementButton;
     private Button Reset;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        decreaseButton.setOnClickListener(new View.OnClickListener() {
+        decrementButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (Integer.parseInt(textView.getText().toString() )!=0)
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     {
         textView=findViewById(R.id.TextView);
         incrementButton=findViewById(R.id.increment);
-        decreaseButton=findViewById(R.id.decrease);
+        decrementButton=findViewById(R.id.decrement);
         Reset=findViewById(R.id.reset);
     }
 
